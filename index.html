@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Surpresa Especial</title>
+    
+    <link rel="stylesheet" href="estilo.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="lock-screen">
+        <div class="lock-content">
+            <h1>Uma surpresa está sendo preparada...</h1>
+            <p>Disponível em:</p>
+            <div id="countdown">
+                <div class="time-unit"><span id="days">00</span><span>Dias</span></div>
+                <div class="time-unit"><span id="hours">00</span><span>Horas</span></div>
+                <div class="time-unit"><span id="minutes">00</span><span>Minutos</span></div>
+                <div class="time-unit"><span id="seconds">00</span><span>Segundos</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="start-screen" class="hidden">
+        <div class="start-button">
+            ❤️
+            <p>Clique aqui, meu amor...</p>
+        </div>
+    </div>
+
+    <div id="main-container" class="hidden">
+        <div id="photo-grid">
+            <div class="memory-slot"></div>
+            <div class="memory-slot"></div>
+            <div class="memory-slot"></div>
+            <div class="memory-slot"></div>
+            <div class="memory-slot"></div>
+            <div class="memory-slot"></div>
+        </div>
+        <h1 id="final-title"></h1>
+    </div>
+    
+    <audio id="som-fogos" src="sons/fogos.mp3" preload="auto"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.js"></script>
+    <script src="magica.js"></script>
+</body>
+</html>
